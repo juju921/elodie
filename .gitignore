@@ -1,1 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea/
+license.txt
+node_modules/
+package.json
+readme.html
