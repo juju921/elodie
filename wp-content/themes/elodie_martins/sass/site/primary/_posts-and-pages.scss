@@ -1,0 +1,74 @@
+.sticky {
+	display: block;
+}
+
+article{
+  width:45%;
+  float:left;
+}
+
+.comments-link a{
+  color: #facfd7;
+  text-decoration: none;
+}
+
+.entry-footer{
+  border-bottom: 1px solid #facfd7;
+  border-top: 1px solid #facfd7;
+  padding:8px 0 ;
+}
+
+article:nth-child(even){
+  margin-right: 10%;
+}
+
+
+ article .content-article{
+  width: 429px;
+   margin: 0;
+  float: left;
+  clear: none ;
+}
+
+.content-article img{
+  margin: 0 20px 10px 0;
+}
+
+  .entry-title{
+    font-family: 'Playfair Display SC', serif;
+  font-size:25px;
+    text-decoration:none;
+    color:#000000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+.hentry {
+	/*margin: 0 0 1.5em;*/
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+	@include flexbox();
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

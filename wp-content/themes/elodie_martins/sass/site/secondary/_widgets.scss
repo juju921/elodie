@@ -1,0 +1,53 @@
+.site-content{
+  max-width: 1500px;
+  margin: 30px auto 0 auto;
+  padding: 0 30px;
+}
+
+#primary{
+	width: 75%;
+    float: left;
+}
+
+article.first{
+
+  @include flexbox();
+  width: 100%;
+}
+
+article.first .entry-content{
+  margin: 0;
+}
+
+article.first .content-article{
+	float: left;
+	padding: 50px 60px;
+    width: 66.666%;
+    background: #F9EBE6;
+}
+.first .the_post_thumbnail{
+  float: right;
+  width: 33.333%;
+  height:400px;
+
+}
+
+.first .the_post_thumbnail img {
+  width: 100%;
+  height: 488px;
+
+}
+
+#secondary{
+	width: 25%;
+    float: right;
+  padding-left: 50px;
+}
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
