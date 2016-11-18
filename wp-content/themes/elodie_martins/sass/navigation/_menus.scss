@@ -6,12 +6,10 @@
 	background: $color_background_menu;
 
 	ul {
-
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-       display: inline-block;
-        text-align: left;
+		list-style:none;
+		margin:0;
+		padding:0;
+		text-align:center;
 
 		ul {
 
@@ -56,10 +54,10 @@
 	}
 
 	li {
-      display: inline-block;
-      float: left;
-      position: relative;
-      z-index: 100;
+		display:inline-block;
+		float:none;
+      //position: relative;
+      //z-index: 100;
 
 		&:hover > a,
 		&.focus > a {
@@ -70,7 +68,7 @@
         font-family: 'Cabin', sans-serif;
         font-size:14px;
 		text-transform:uppercase;
-        display: block;
+		display:inline-block;
 		text-decoration: none;
         padding: 15px;
 	}
@@ -93,7 +91,7 @@
 		display: none;
 	}
 	.main-navigation ul {
-		display: inline-block;
+		//display: inline-block;
 	}
 }
 

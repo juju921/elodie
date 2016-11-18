@@ -18,6 +18,9 @@
   text-align: center;
 }
 
+.search-form{
+  padding:10px 0;
+}
 .search-field{
   width: 90%;
   margin: 2px auto;
@@ -25,10 +28,12 @@
   border: 1px solid #bbb;
 }
 
-.search-submit{
+input[type="submit"]{
   background: #facfd7;
   border: 1px solid #fce2e5;
   color: #333333;
+  margin: 0 auto;
+  display: block;
 
 }
 
