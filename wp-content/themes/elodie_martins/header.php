@@ -50,7 +50,10 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<?php	if ( is_home() ) {
+		wd_slider(1);
+	}?>
+
 
 	<div id="content" class="site-content">
-
 

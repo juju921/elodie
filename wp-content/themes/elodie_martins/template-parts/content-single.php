@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
+ * Template part for displaying single post.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -10,10 +10,10 @@
 ?>
 
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-	<div class="entry-content " >
+	<div class="entry-content first" >
 		<div class="the_post_thumbnail ">
 			<?php the_post_thumbnail("first-article"); ?>
 		</div>
@@ -38,9 +38,9 @@
 				<?php
 			endif; ?>
 
-		<?php
+			<?php
 			the_content( sprintf(
-				/* translators: %s: Name of current post. */
+			/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'elodie_martins' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
@@ -49,7 +49,7 @@
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'elodie_martins' ),
 				'after'  => '</div>',
 			) );
-		?>
+			?>
 			<footer class="entry-footer">
 
 				<?php elodie_martins_entry_footer(); ?>
