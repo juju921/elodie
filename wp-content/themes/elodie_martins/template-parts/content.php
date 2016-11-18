@@ -15,7 +15,9 @@
 
 	<div class="entry-content " >
 		<div class="the_post_thumbnail ">
+			<a href="<?php get_permalink() ?>" rel="bookmark">
 			<?php the_post_thumbnail("first-article"); ?>
+			</a>
 		</div>
 		<div class="content-article">
 
