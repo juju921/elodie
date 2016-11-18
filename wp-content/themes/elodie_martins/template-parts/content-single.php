@@ -10,12 +10,12 @@
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="first-single">
 
 
-	<div class="entry-content first" >
+	<div class="entry-content firstSingle" >
 		<div class="the_post_thumbnail ">
-			<?php the_post_thumbnail("first-article"); ?>
+			<?php the_post_thumbnail("thumbnail-single-article"); ?>
 		</div>
 		<div class="content-article">
 

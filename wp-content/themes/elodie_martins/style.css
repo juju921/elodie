@@ -603,13 +603,26 @@ a {
   margin: 30px auto 0 auto;
   padding: 0 30px; }
 
-.first {
-  width: 75%;
-  margin: 30px 0 0 0; }
-
 #primary {
   width: 75%;
   float: left; }
+
+.mks_author_widget p {
+  padding: 0 20px; }
+
+.mks_author_widget h3 {
+  text-align: center; }
+
+.search-field {
+  width: 90%;
+  margin: 2px auto;
+  color: #888;
+  border: 1px solid #bbb; }
+
+.search-submit {
+  background: #facfd7;
+  border: 1px solid #fce2e5;
+  color: #333333; }
 
 #secondary {
   width: 25%;
@@ -642,6 +655,12 @@ a {
 article {
   width: 45%;
   float: left; }
+
+.first-single {
+  width: 100%; }
+
+.first-single .content-article {
+  width: 100%; }
 
 .comments-link a {
   color: #facfd7;
