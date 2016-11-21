@@ -15,7 +15,7 @@
 
 	<div class="entry-content " >
 		<div class="the_post_thumbnail ">
-			<a href="<?php get_permalink() ?>" rel="bookmark">
+			<a href="<?php  echo get_permalink(); ?>" rel="bookmark" title="<?php echo  get_the_title(); ?>">
 			<?php the_post_thumbnail("first-article"); ?>
 			</a>
 		</div>
@@ -28,7 +28,8 @@
 				if ( is_single() ) :
 					the_title( '<h1 class="entry-title">', '</h1>' );
 				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="'.get_the_title().'">', '</a></h2>' );
+
 				endif; ?>
 
 

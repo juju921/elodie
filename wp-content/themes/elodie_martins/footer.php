@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		[instagram-feed id="186261528"]
+
 
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'elodie_martins' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'elodie_martins' ), 'WordPress' ); ?></a>
