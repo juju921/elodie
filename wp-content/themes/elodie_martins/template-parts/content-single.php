@@ -24,14 +24,16 @@
             endif; ?>
 
 
+	        <?php if ( 'post' === get_post_type() ) : ?>
+		        <div class="entry-meta">
+			        <?php elodie_martins_posted_on(); ?>
+		        </div><!-- .entry-meta -->
+		        <?php
+	        endif; ?>
+
         </header><!-- .entry-header -->
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php elodie_martins_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php
-		endif; ?>
+
 
 
 		<div class="the_post_thumbnail ">

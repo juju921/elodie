@@ -18,8 +18,30 @@ article{
 .first-single .entry-header {
   width: 100%;
   text-align: center;
+  margin: 20px 0;
+}
+
+.mks_social_widget_ul{
+  padding: 0;
+  margin: 10px 0 10px 38px;
+}
+#secondary ul.mks_social_widget_ul li a{
+  margin-right: 15px;
+  margin-top:15px;
+  margin-bottom: 15px;
 
 }
+
+#secondary .mks_author_widget img{
+  margin: 20px  auto  ;
+  @include border-radius(50%);
+  display: block;
+  float: none;
+}
+.mks_autor_link_wrap{
+  text-align: center;
+}
+
 
 .first-single h1{
   margin: 0 auto;

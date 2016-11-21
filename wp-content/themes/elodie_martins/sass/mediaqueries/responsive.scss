@@ -1,0 +1,28 @@
+@media all and (max-width: 680px) {
+
+  #primary{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  article{
+    width: 100%;
+    float: none;
+  }
+
+
+
+  #secondary{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+  }
+
+  #secondary ul.mks_social_widget_ul li a{
+    width: 64px;
+    height: 64px;
+  }
+
+}
