@@ -1,6 +1,11 @@
 @media all and (max-width: 680px) {
+.main-navigation li {
+  display: block;
+}
 
-  #primary{
+
+
+#primary{
     margin: 0 auto;
     width: 90%;
     overflow: hidden;
@@ -10,6 +15,7 @@
   article{
     width: 100%;
     float: none;
+
   }
 
 
