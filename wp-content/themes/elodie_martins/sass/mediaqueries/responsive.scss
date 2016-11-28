@@ -26,6 +26,10 @@
     width: 100%;
   }
 
+  .menu-toggle,
+  .main-navigation.toggled ul {
+    display: none;
+  }
   #secondary ul.mks_social_widget_ul li a{
     width: 64px;
     height: 64px;

@@ -85,7 +85,10 @@
 .main-navigation.toggled ul {
 	//display: block;
 }
-
+ .stickytop {
+	position:fixed;
+	top:0
+}
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
