@@ -29,8 +29,26 @@ article{
   margin-right: 15px;
   margin-top:15px;
   margin-bottom: 15px;
-
 }
+
+#simplemasonry-container-66{
+  z-index: 1;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 1;
+}
+
 
 #secondary .mks_author_widget img{
   margin: 20px  auto  ;

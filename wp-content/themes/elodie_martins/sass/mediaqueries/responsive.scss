@@ -1,8 +1,53 @@
 @media all and (max-width: 680px) {
-.main-navigation li {
-  display: block;
+#primary-menu{
+  margin-top: 59px;
 }
 
+
+  .main-navigation{
+    position: fixed;
+    z-index:10;
+  }
+
+.nav-menu{
+  display: none;
+}
+  .main-navigation li {
+  display: block;
+}
+  .main-navigation .nav-toggle{
+    display: block;
+    font-size: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+    top: 0;
+  }
+
+  .nav-toggle:before {
+    color: #fff;
+    font-size: 1.6em;
+    text-transform: none;
+    text-align: center;
+    position: absolute;
+    content: "\2261";
+    text-indent: 0;
+    speak: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .nav-toggle.active:before {
+    font-size: 1.6em;
+    content: "\78";
+  }
 
 
 #primary{

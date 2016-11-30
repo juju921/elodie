@@ -486,7 +486,11 @@ a {
 /* Small menu. */
 .stickytop {
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
+
+.main-navigation .nav-toggle {
+  display: none; }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -611,9 +615,13 @@ a {
 
 .search-field {
   width: 90%;
-  margin: 2px auto;
+  margin: 10px auto;
+  display: block;
   color: #888;
   border: 1px solid #bbb; }
+
+._3hft {
+  width: 100%; }
 
 input[type="submit"] {
   background: #facfd7;
@@ -673,6 +681,22 @@ article {
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px; }
+
+#simplemasonry-container-66 {
+  z-index: 1; }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 1; }
 
 #secondary .mks_author_widget img {
   margin: 20px auto;
@@ -840,8 +864,49 @@ object {
   display: block; }
 
 @media all and (max-width: 680px) {
+  #primary-menu {
+    margin-top: 59px; }
+
+  .main-navigation {
+    position: fixed;
+    z-index: 10; }
+
+  .nav-menu {
+    display: none; }
+
   .main-navigation li {
     display: block; }
+
+  .main-navigation .nav-toggle {
+    display: block;
+    font-size: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+    top: 0; }
+
+  .nav-toggle:before {
+    color: #fff;
+    font-size: 1.6em;
+    text-transform: none;
+    text-align: center;
+    position: absolute;
+    content: "\2261";
+    text-indent: 0;
+    speak: none;
+    width: 100%;
+    left: 0;
+    top: 0; }
+
+  .nav-toggle.active:before {
+    font-size: 1.6em;
+    content: "\78"; }
 
   #primary {
     margin: 0 auto;
